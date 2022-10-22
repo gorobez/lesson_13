@@ -1,0 +1,272 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+    font-family: "Neucha", serif;
+}
+
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+
+.wrapper {
+    background: url('../img/field_image_1489470271_atakama.jpg') 0 0 / cover no-repeat;
+}
+
+.main,
+.main__container {
+    position: relative;
+    min-height: 100vh;
+    perspective: 3000px;
+    transform-style:preserve-3d;
+}
+
+.transformer__head {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    transform: rotate(-2deg) translate(-1000px, 0);
+    animation: appearance-head 1s ease forwards 0.5s;
+}
+
+
+@keyframes appearance-head {
+
+    0%{
+        transform: rotate(-2deg) translate(-1000px, -1000px);
+    }
+    50%{
+        transform: rotate(-2deg) translate(0, 0);
+    }
+    75%{
+        transform: rotate(-2deg) translate(0, 20px);
+    }
+    100%{
+       transform: rotate(-2deg) translate(0, 0);
+    }
+}
+
+.transformer__head img {
+    width: 100%;
+}
+
+.transformer__body {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    transform: translate(0, -1000px);
+    animation: appearance-body 1s ease forwards;
+}
+
+.transformer__body img {
+    width: 100%;
+}
+
+@keyframes appearance-body {
+
+    0%{
+        transform: translate(0, -1000px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.transformer__hand-right {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    left: 100px;
+    transform: rotate(45deg) translate(-1000px, 0);
+    animation: appearance-hand 1s ease forwards 0.2s;
+}
+
+@keyframes appearance-hand {
+
+    0%{
+        transform: rotate(70deg)  translate(-1000px, 0);
+    }
+    100%{
+        transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+.transformer__hand-right img {
+    width: 100%;
+}
+
+.transformer__hand-left {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    transform: rotate(45deg) translate(-1000px, 0);
+    animation: appearance-hand 1s ease forwards 0.3s;
+}
+
+.transformer__hand-left img {
+    width: 100%;
+}
+
+.transformer__lag-right {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    transform: translate(500px, 1000px);
+    animation: appearance-lag 1s ease forwards 0.3s;
+}
+
+.transformer__lag-right img {
+    width: 100%;
+}
+
+.transformer__lag-left {
+    position: absolute;
+    max-width: 250px;
+    bottom: 25%;
+    left: 100px;
+    transform: translate(100px, 1000px);
+    animation: appearance-lag 1s ease forwards 0.3s;
+}
+
+.transformer__lag-left img {
+    width: 100%;
+}
+
+@keyframes appearance-lag {
+
+    0%{
+        transform: translate(100px, 1000px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.transformer-two {
+    max-width: 300px;
+    position: absolute;
+    right: 200px;
+    bottom: 30%;
+    transform: translate(0, -1000px);
+    animation: appearance-body 1s linear forwards 1.7s;
+}
+
+.transformer-two img {
+    width: 100%;
+}
+
+.main__dust {
+    width: 700px;
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    opacity: 0;
+    transform: translate(0, 0);
+    animation: appearance-dust 7s linear forwards 2.7s;
+}
+
+.main__dust img {
+    max-width: 100%;
+}
+
+@keyframes appearance-dust {
+
+    0%{
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+  
+    5%{
+        opacity: 0.7;
+        transform: translate(0, 0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0, -1000px);
+    }
+}
+
+
+.transformer-three {
+    max-width: 200px;
+    max-height: 150px;
+    position: absolute;
+    right: 600px;
+    bottom: 50%;
+    transform: translate(0, -1000px);
+    animation: appearance-body 1s ease forwards 5s, rotate 1.5s ease forwards 6s;
+}
+
+.transformer-three img {
+    width: 100%;
+}
+
+@keyframes rotate {
+
+    0%{
+        transform: rotateX(0deg);
+    }
+
+    100%{
+
+        transform: rotateX(360deg);
+    }
+}
+
+.main__label {
+    position: absolute;
+    border-radius:56% 44% 100% 0% / 97% 40% 60% 3%;
+    background-color: #fff;
+    min-width: 220px;
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    transform: translate(0, -500px);
+    opacity: 0;
+}
+
+.main__label--one {
+    left: 30%;
+    bottom: 65%;
+    animation: appearance-dialog 4s ease normal 0.7s;
+}
+
+.main__label--two {
+    right: 0;
+    bottom: 60%;
+    animation: appearance-dialog 4s ease normal 3s;
+}
+
+.main__label--three {
+    right: 35%;
+    bottom: 60%;
+    animation: appearance-dialog 4s ease normal 7s;
+}
+
+@keyframes appearance-dialog {
+
+    0%{
+        opacity: 0;
+        transform: translate(0, -500px);
+    }
+   25%{
+    opacity: 1;
+    transform: translate(0, 0);
+   }
+   75%{
+    opacity: 1;
+    transform: translate(0, 0);
+   }
+    100%{
+        opacity: 1;
+        transform: translate(0, -500px);
+    }
+}
