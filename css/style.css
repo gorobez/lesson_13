@@ -12,14 +12,14 @@ body {
 
 
 .wrapper {
-    background: url('../img/field_image_1489470271_atakama.jpg') 0 0 / cover no-repeat;
+    background: url('../img/atakama.webp') 0 0 / cover no-repeat;
     animation: change-bg 1s ease forwards 13s;
 }
 
 @keyframes change-bg {
 
     0%{
-        background: url('../img/field_image_1489470271_atakama.jpg') 0 0 / cover no-repeat;
+        background: url('../img/atakama.webp') 0 0 / cover no-repeat;
     }
    
     
