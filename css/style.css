@@ -13,6 +13,19 @@ body {
 
 .wrapper {
     background: url('../img/field_image_1489470271_atakama.jpg') 0 0 / cover no-repeat;
+    animation: change-bg 1s ease forwards 13s;
+}
+
+@keyframes change-bg {
+
+    0%{
+        background: url('../img/field_image_1489470271_atakama.jpg') 0 0 / cover no-repeat;
+    }
+   
+    
+    100%{
+        background: url('../img/bc.webp') bottom / cover no-repeat;
+    }
 }
 
 .main,
@@ -235,7 +248,7 @@ body {
 
 .main__label--one {
     left: 30%;
-    bottom: 65%;
+    bottom: 70%;
     animation: appearance-dialog 4s ease normal 0.7s;
 }
 
@@ -247,8 +260,32 @@ body {
 
 .main__label--three {
     right: 35%;
+    bottom: 65%;
+    animation: appearance-dialog 3s ease normal 7s;
+}
+
+.main__label--four {
+    font-size: 18px;
+    text-transform: uppercase;
+    right: 35%;
+    bottom: 65%;
+    animation: appearance-dialog 4s ease normal 9s;
+}
+
+.main__label--five {
+    font-size: 24px;
+    text-transform: uppercase;
+    left: 30%;
+    bottom: 80%;
+    animation: appearance-dialog 4s ease normal 11s;
+}
+
+.main__label--six {
+    font-size: 24px;
+    text-transform: uppercase;
+    right: 0;
     bottom: 60%;
-    animation: appearance-dialog 4s ease normal 7s;
+    animation: appearance-dialog 4s ease normal 11.5s;
 }
 
 @keyframes appearance-dialog {
