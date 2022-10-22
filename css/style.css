@@ -213,7 +213,7 @@ body {
     max-height: 150px;
     position: absolute;
     right: 600px;
-    bottom: 50%;
+    bottom: 41%;
     transform: translate(0, -1000px);
     animation: appearance-body 1s ease forwards 5s, rotate 1.5s ease forwards 6s;
 }
